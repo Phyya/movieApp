@@ -59,6 +59,7 @@ const HomePage = () => {
           >
             <Text>{"{movie Category name}"}</Text>
             <Flex
+              justifyContent="center"
               css={{
                 "&::-webkit-scrollbar": {
                   display: "none",
@@ -83,6 +84,7 @@ const HomePage = () => {
             <Text>{"{movie Category name}"}</Text>
             <Flex
               flexWrap={isTablet ? "wrap" : undefined}
+              justifyContent="center"
               css={{
                 "&::-webkit-scrollbar": {
                   display: "none",

@@ -8,7 +8,7 @@ const MovieCard = ({ movie }) => {
   return (
     <Flex
       bg="brand.900"
-      width={isMobile ? "200px" : isTablet ? "250px" : "300px"}
+      width={isMobile ? "130px" : isTablet ? "250px" : "300px"}
       height="160px"
       margin="5px"
       justifyContent={"center"}
