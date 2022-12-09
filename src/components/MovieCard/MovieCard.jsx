@@ -1,12 +1,14 @@
 import React from "react";
 import { Box, Text, Flex } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const MovieCard = ({ movie }) => {
-  console.log(movie);
+  const [isMobile] = useMediaQuery("(max-width: 600px)");
+  const [isTablet] = useMediaQuery("(max-width: 800px)");
   return (
     <Flex
       bg="brand.900"
-      width="300px"
+      width={isMobile ? "200px" : isTablet ? "250px" : "300px"}
       height="160px"
       margin="5px"
       justifyContent={"center"}

@@ -64,6 +64,7 @@ const HomePage = () => {
                   display: "none",
                 },
               }}
+              flexWrap={isTablet ? "wrap" : undefined}
             >
               {movies.map((movie) => (
                 <MovieCard movie={movie} key={movie._id} />
@@ -81,6 +82,7 @@ const HomePage = () => {
           >
             <Text>{"{movie Category name}"}</Text>
             <Flex
+              flexWrap={isTablet ? "wrap" : undefined}
               css={{
                 "&::-webkit-scrollbar": {
                   display: "none",
